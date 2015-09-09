@@ -2,8 +2,8 @@
 
 ## Map 1 - Using Source-Destination Latitude Longitude Map  
 
-1. `plotRoute(arg)` method is provided in `MapServiceManager.js` file to plot a route between 2 locations by providing `latitude` and `longitude` of Source and Destination Locations on map.  
-2. `plotRoute(arg)` method accepts an object as parameter that contains following properties:
+* `plotRoute(arg)` method is provided in `MapServiceManager.js` file to plot a route between 2 locations by providing `latitude` and `longitude` of Source and Destination Locations on map.  
+* `plotRoute(arg)` method accepts an object as parameter that contains following properties:
 
 ```
     var options = {
@@ -42,12 +42,11 @@ and, `locArray` is an array of objects of following type:
 ```
     	
 
-3. Example  
-
-3.a Consider, you want to plot all possible routes between 2 locations with following `latitude` and `longitude`:
+* Example  
+    1. Consider, you want to plot all possible routes between 2 locations with following `latitude` and `longitude`:
 Location 1 : Latitude (31.6335441), Longitude (74.8701203)  
-Location 2 : Latitude (28.6454414), Longitude (77.0907573)    
-3.b In order to use `plotRoute`, write following code:
+Location 2 : Latitude (28.6454414), Longitude (77.0907573)
+    2. In order to use `plotRoute`, write following code:
 
 ```
     var count = 0
@@ -84,8 +83,8 @@ Location 2 : Latitude (28.6454414), Longitude (77.0907573)
 
 ##Map 2 - Using Source-Intermediate-Destination Latitude Longitude Map   
 
-1. `plotRoute(arg)` method is provided in `MapServiceManager.js` file to plot a route between 2 locations with Intermediate locations by providing `latitude` and `longitude` of Source, Destination and Intermediate Locations on map.  
-2. `plotRoute(arg)` method accepts an object as parameter that contains following properties:
+* `plotRoute(arg)` method is provided in `MapServiceManager.js` file to plot a route between 2 locations with Intermediate locations by providing `latitude` and `longitude` of Source, Destination and Intermediate Locations on map.  
+* `plotRoute(arg)` method accepts an object as parameter that contains following properties:
 
 ```
     var options = {
@@ -124,14 +123,13 @@ and, 1st element of `locArray` is considered as Source Location and Last element
 ```
     	
 
-3. Example
-
-3.a Consider, you want to plot all possible routes between Location 1 and Location 4 with Intermediate Locations are Locations Location 2 and 3, having following `latitude` and `longitude`:  
+* Example
+    1. Consider, you want to plot all possible routes between Location 1 and Location 4 with Intermediate Locations are Locations Location 2 and 3, having following `latitude` and `longitude`:  
 Location 1 : Latitude (31.6335441), Longitude (74.8701203)  
 Location 2 : Latitude (31.3223978), Longitude (75.5734192)  
 Location 3 : Latitude (28.6454414), Longitude (77.0907573)  
-Location 4 : Latitude (19.0822507), Longitude (72.8812042)    
-3.b In order to use `plotRoute`, write following code:  
+Location 4 : Latitude (19.0822507), Longitude (72.8812042)
+    2. In order to use `plotRoute`, write following code:  
 
 ```
     var count = 0
@@ -178,8 +176,8 @@ Location 4 : Latitude (19.0822507), Longitude (72.8812042)
 
 ##Map 3 - Using Source-Destination Location Map  
 
-1. `plotRoute(arg)` method is provided in `MapServiceManager.js` file to plot a route between 2 locations by providing `latitude` and `longitude` of Source, Destination Locations on map.  
-2. `plotRoute(arg)` method accepts an object as parameter that contains following properties:  
+* `plotRoute(arg)` method is provided in `MapServiceManager.js` file to plot a route between 2 locations by providing `latitude` and `longitude` of Source, Destination Locations on map.  
+* `plotRoute(arg)` method accepts an object as parameter that contains following properties:  
 
 ```
     var options = {
@@ -218,8 +216,8 @@ and, `locArray` is an array of objects of following type:
 ```
     	
 
-3. `getLatLngFrmLoc(arg)` method is provided in `MapServiceManager.js` file to get `latitude` and `longitude` of a given location.  
-4. `getLatLngFrmLoc(arg)` method accepts an object as parameter that contains following properties:  
+* `getLatLngFrmLoc(arg)` method is provided in `MapServiceManager.js` file to get `latitude` and `longitude` of a given location.  
+* `getLatLngFrmLoc(arg)` method accepts an object as parameter that contains following properties:  
 
 ```
     var options = {
@@ -244,12 +242,11 @@ where, `result` object of `successCallback` method contains following properties
 ```
     	
 
-5. `getLatLngFrmLoc(arg)` and `plotRoute(arg)` methods can be used together to plot route between two location by providing their names.  
+* `getLatLngFrmLoc(arg)` and `plotRoute(arg)` methods can be used together to plot route between two location by providing their names.  
 
-6. Example  
-
-6.a Consider, you want to plot all possible routes between 'Delhi' and 'Mumbai'.  
-6.b In order to use `getLaLngFrmLoc`, write following code:  
+* Example  
+    1. Consider, you want to plot all possible routes between 'Delhi' and 'Mumbai'.  
+    2. In order to use `getLaLngFrmLoc` and `plotRoute`, write following code:  
 
 ```
     //Get the Latitude and Longitude of Delhi.
@@ -281,12 +278,7 @@ where, `result` object of `successCallback` method contains following properties
     }	
     }		
     mapServiceManager.getLatLongFrmLoc(options);
-```
-    	
 
-6.c In order to use `plotRoute`, write following code:
-
-```
     //Use srcLatLong and dstLatLong values to call plotRoute(args) method.
 
     var count = 0
@@ -322,8 +314,8 @@ where, `result` object of `successCallback` method contains following properties
  
  ##Map 4 - Using Source-Intermediate-Destination Location Map   
  
-1. `plotRoute(arg)` method is provided in `MapServiceManager.js` file to plot a route between 2 locations with Intermediate locations by providing `latitude` and `longitude` of Source, Destination and Intermediate Locations on map.  
-2. `plotRoute(arg)` method accepts an object as parameter that contains following properties:  
+* `plotRoute(arg)` method is provided in `MapServiceManager.js` file to plot a route between 2 locations with Intermediate locations by providing `latitude` and `longitude` of Source, Destination and Intermediate Locations on map.  
+* `plotRoute(arg)` method accepts an object as parameter that contains following properties:  
 
 ```
     var options = {
@@ -362,8 +354,8 @@ and, `locArray` is an array of objects of following type:
 ```
     	
 
-3. `getLatLngFrmLoc(arg)` method is provided in `MapServiceManager.js` file to get `latitude` and `longitude` of a given location.  
-4. `getLatLngFrmLoc(arg)` method accepts an object as parameter that contains following properties:  
+* `getLatLngFrmLoc(arg)` method is provided in `MapServiceManager.js` file to get `latitude` and `longitude` of a given location.  
+* `getLatLngFrmLoc(arg)` method accepts an object as parameter that contains following properties:  
 
 ```
     var options = {
@@ -388,12 +380,11 @@ where, `result` object of `successCallback` method contains following properties
 ```
     	
 
-5. `getLatLngFrmLoc(arg)` and `plotRoute(arg)` methods can be used together to plot route between two location by providing their names.  
+* `getLatLngFrmLoc(arg)` and `plotRoute(arg)` methods can be used together to plot route between two location by providing their names.  
 
-6. Example  
-
-6.a Consider, you want to plot all possible routes between 'Delhi' and 'Mumbai' with 'Pune' as intermediate Location.
-6.b In order to use `getLaLngFrmLoc`, write following code:  
+* Example  
+    1. Consider, you want to plot all possible routes between 'Delhi' and 'Mumbai' with 'Pune' as intermediate Location.
+    2. In order to use `getLaLngFrmLoc` and `plotRoute`, write following code:  
 
 ```
     //Get the Latitude and Longitude of Delhi.
@@ -440,12 +431,7 @@ where, `result` object of `successCallback` method contains following properties
     }	
     }		
     mapServiceManager.getLatLongFrmLoc(options);
-```
-    	
 
-6.c In order to use `plotRoute`, write following code:  
-
-```
     //Use srcLatLong and dstLatLong values to call plotRoute(args) method.
 
     var count = 0
@@ -486,8 +472,8 @@ where, `result` object of `successCallback` method contains following properties
 
 ##Map 5 - Using Location Map  
 
-1. `plotLocation(arg)` method is provided in `MapServiceManager.js` file to plot a Location on map.  
-2. `plotLocation(arg)` method accepts an object as paramter that contains following properties:  
+* `plotLocation(arg)` method is provided in `MapServiceManager.js` file to plot a Location on map. 
+* `plotLocation(arg)` method accepts an object as paramter that contains following properties:  
 
 ```
     var options = {
@@ -513,10 +499,9 @@ where, `result` object of `successCallbackMethod` contains following properties:
 ```
     	
 
-3. Example  
-
-3.a Consider, you want to plot a location with keyword saket on map and after location is plotted you want to display its latitude,longitude & Fully Qualified Location Name on map on console.  
-3.b In order to use `plotLocation`, write following code:  
+* Example  
+    1. Consider, you want to plot a location with keyword saket on map and after location is plotted you want to display its latitude,longitude & Fully Qualified Location Name on map on console.  
+    2. In order to use `plotLocation`, write following code:  
 
 ```
     var options = {
