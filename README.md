@@ -312,7 +312,7 @@ where, `result` object of `successCallback` method contains following properties
     mapServiceManager.plotRoute(options);
  ```
  
- ##Map 4 - Using Source-Intermediate-Destination Location Map   
+##Map 4 - Using Source-Intermediate-Destination Location Map   
  
 * `plotRoute(arg)` method is provided in `MapServiceManager.js` file to plot a route between 2 locations with Intermediate locations by providing `latitude` and `longitude` of Source, Destination and Intermediate Locations on map.  
 * `plotRoute(arg)` method accepts an object as parameter that contains following properties:  
